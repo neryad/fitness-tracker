@@ -2,7 +2,7 @@
   <form
     fxLayout="column"
     fxLayoutAlign="center center"
-    fxLayoutGap='10px'
+    fxLayoutGap="10px"
     #f="ngForm"
     (ngSubmit)="onSumit(f)"
   >
@@ -53,8 +53,17 @@
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <mat-checkbox ngModel name='agree' required color='primary'>Agree toTerms and Conditions</mat-checkbox>
+    <mat-checkbox ngModel name="agree" required color="primary"
+      >Agree toTerms and Conditions</mat-checkbox
+    >
 
-    <button type="submit" mat-raised-button color="primary" [disabled]='f.invalid'>Submit</button>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="f.invalid"
+    >
+      Submit
+    </button>
   </form>
 </section>
