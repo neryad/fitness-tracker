@@ -2,7 +2,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +16,7 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { SidenavListComponent } from './components/shared/sidenav-list/sidenav-list.component';
+import { StopTrainingComponent } from './components/training/current-training/stop-training.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { SidenavListComponent } from './components/shared/sidenav-list/sidenav-l
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-
+    StopTrainingComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +39,10 @@ import { SidenavListComponent } from './components/shared/sidenav-list/sidenav-l
     AppRoutingModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [StopTrainingComponent],
 })
-export class AppModule { }
+export class AppModule {}
