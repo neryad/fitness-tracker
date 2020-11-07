@@ -43,3 +43,9 @@
   <mat-header-row *matHeaderRowDef="dislayColumns"></mat-header-row>
   <mat-row *matRowDef="let row; columns: dislayColumns"></mat-row>
 </mat-table>
+<mat-paginator
+  #paginator
+  [pageSize]="5"
+  [pageSizeOptions]="[1, 5, 10, 20]"
+  showFirstLastButtons
+></mat-paginator>
