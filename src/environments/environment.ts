@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyBEMjjMOBF1RmL0dVJUFVT4IAbdE2ucPfM',
+    authDomain: 'ng-fitness-tracker-cf61a.firebaseapp.com',
+    databaseURL: 'https://ng-fitness-tracker-cf61a.firebaseio.com',
+    projectId: 'ng-fitness-tracker-cf61a',
+    storageBucket: 'ng-fitness-tracker-cf61a.appspot.com',
+    messagingSenderId: '152784059980',
+    appId: '1:152784059980:web:02f26524ad66b40fdbfee9',
+  },
 };
 
 /*
